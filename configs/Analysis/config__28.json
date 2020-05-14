@@ -1,0 +1,14 @@
+{
+  "analysisTools": [
+    {
+      "name": "OverlayLayers",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "allowToExport": false,
+      "returnFeatureCollection": false,
+      "toolLabel": "Superponer capas"
+    }
+  ]
+}

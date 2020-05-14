@@ -1,0 +1,75 @@
+{
+  "taskOper": "OR",
+  "groupByLayer": false,
+  "zoomto": false,
+  "zoombackto": false,
+  "allowCustom": false,
+  "allowResetAll": false,
+  "allowTurnOffAll": false,
+  "filters": [
+    {
+      "layerId": "Aplicacion_Edicion_982",
+      "url": "https://localhost:6443/arcgis/rest/services/TFM/Aplicacion_Edicion/FeatureServer/0",
+      "name": "Incendios geolocalizados",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "riesgo_incen",
+              "label": "riesgo_incen",
+              "dateFormat": "",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 3
+            },
+            "interactiveObj": {
+              "prompt": "Riesgo de incendio es",
+              "hint": "",
+              "cascade": "none"
+            },
+            "caseSensitive": false,
+            "displaySQL": "riesgo_incen = 3",
+            "expr": "riesgo_incen = 3"
+          }
+        ],
+        "expr": "riesgo_incen = 3",
+        "displaySQL": "riesgo_incen = 3"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    }
+  ]
+}
